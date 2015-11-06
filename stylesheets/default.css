@@ -1,0 +1,59 @@
+body {
+  background: url("https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&fm=jpg&s=a4598570a3286ea23369fdefe46953ba");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: helvetica;
+}
+
+header {
+  font-size:15px;
+  color:white;
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid white;
+  background-color: white;
+  opacity: 0.4;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+a {
+  color: #006400;
+}
+
+.about-me {
+  display: inline-block;
+}
+
+.about-me-text {
+  float: left;
+  padding: 10px;
+  border: 5px solid white;
+  background-color: white;
+  opacity: 0.6;
+  color: #006400;
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  margin: 50px 30px 50px 430px;
+}
+
+.pic {
+  float: right;
+  border-radius: 15px;
+  height: 280px;
+  width: 280px;
+  margin: 50px 10px 50px;
+}
+
+h2 {
+  text-align: center;
+}
