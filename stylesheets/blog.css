@@ -1,6 +1,6 @@
 body {
   background: url("https://images.unsplash.com/42/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg?dpr=2&fit=crop&fm=jpg&h=750&ixlib=rb-0.3.5&q=50&w=1450");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   font-family: helvetica;
 }
@@ -13,7 +13,7 @@ body {
   padding: 10px;
   margin: auto;
   list-style-type: none;
-  opacity: 0.4;
+  opacity: 0.8;
   margin-bottom: 10px;
 }
 
