@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <title>Week 4 Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mira Scarvalone's Phase 0 Dev Bootcamp Blog</h1>
+  </header>
+
+  <section class ="blog-title">
+    <p>Week 4: Ruby - Arrays and Hashes</p>
+    <p>November 13, 2015</p>
+  </section>
+
+  <section class = "blog-text">
+    <p>
+      This week we learned about arrays and hashes in Ruby, and got a sense of some examples where we would use both of these concepts in our programs.
+    </p>
+
+    <h1>Arrays
+    </h1>
+
+    <p>Arrays are collections of elements enclosed by brackets and separated by commas. The elements can be numbers, strings, integers, etc. Elements of an array are indexed at zero, and if we want to access a particular element of an array, we can write array[position]. In the example below, we could enter the following to obtain the first element of the array (1):
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      my_numbers = [1,2,3,4,5]
+      puts my_numbers[0]
+    </pre>
+
+    <h1>Hashes
+    </h1>
+
+    <p>Hashes are a collection of pairs, called keys and values. Each key maps to one value, and the pairs in a hash are not indexed, which is different than an array. For example, the array below maps each month of the year to its numerical value. If we want to know what month March is, we type the following:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      months = {
+        'January'     => 1,
+        'February'  => 2,
+        'March'      => 3,
+        'April'      => 4,
+        'May'   => 5,
+        'June'    => 6,
+        'July'     => 7,
+        'August'  => 8,
+        'September'      => 9,
+        'October'      => 10,
+        'November'   => 11,
+        'December'    => 12
+      }
+
+      months['March']
+    </pre>
+
+  </section>
+
+  <footer class = "nav-bar">
+      <ul>
+        <li class="blog-footer">
+          <a href="./index.html">BACK TO MY BLOG</a>
+        </li>
+        <li class="blog-footer">
+          <a href="../index.html">BACK TO MY WEBSITE</a>
+        </li>
+        <li class="blog-footer">
+          <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
