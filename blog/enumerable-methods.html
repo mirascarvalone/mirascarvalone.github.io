@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Week 5 Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mira Scarvalone's Phase 0 Dev Bootcamp Blog</h1>
+  </header>
+
+  <section class ="blog-title">
+    <p>Week 5: Ruby - Enumerable Methods</p>
+    <p>November 19, 2015</p>
+  </section>
+
+  <section class = "blog-text">
+    <h1>The Map Enumerable Method
+    </h1>
+
+    <p>The map method calls a block of code on every element of the original object and outputs that to a new array. For example, we could use the map method to add 1 to each number in an array:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      numbers = [1,2,3,4,5]
+      numbers.map {|x| x + 1}
+
+      => [2, 3, 4, 5, 6]
+    </pre>
+
+    <p>Map can also work on a range, for example:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      (1..3).map {|i| i + 5}
+
+      => [6, 7, 8]
+    </pre>
+
+    <p>Map can also work on an array of strings, for example:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      names = ["Rand","Donald","Hillary"]
+      names.map {|x| x.upcase}
+      => ["RAND", "DONALD", "HILLARY"]
+    </pre>
+
+    <p>Part of the usefulness of the map method is that it automatically returns an array, which adds functionality over the each method.
+    </p>
+
+  </section>
+
+  <footer class = "nav-bar">
+      <ul>
+        <li class="blog-footer">
+          <a href="./index.html">BACK TO MY BLOG</a>
+        </li>
+        <li class="blog-footer">
+          <a href="../index.html">BACK TO MY WEBSITE</a>
+        </li>
+        <li class="blog-footer">
+          <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
