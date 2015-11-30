@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <title>Week 6 Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mira Scarvalone's Phase 0 Dev Bootcamp Blog</h1>
+  </header>
+
+  <section class ="blog-title">
+    <p>Week 6: Ruby - Objects and Classes</p>
+    <p>November 29, 2015</p>
+  </section>
+
+  <section class = "blog-text">
+    <p>
+      This week we learned about objects and classes in Ruby and how to use them to model some basic games. Here I'll present a very basic tic tac toe game.
+    </p>
+
+    <h1>Basic Code
+    </h1>
+
+    <pre class="prettyprint lang-ruby">
+      class TicTac
+        def initialize(board)
+          @board = board
+        end
+
+        def play
+          p "enter a row"
+            @row = gets.chomp.to_i
+          p "enter a column"
+            @column = gets.chomp.to_i
+          p "enter X or O"
+            @move = gets.chomp
+          @board[@row][@column] = @move
+
+          @board.each do |row|
+            p row
+          end
+        end
+
+      end
+
+
+      board = [["","",""],
+              ["","",""],
+              ["","",""]]
+
+      game = TicTac.new(board)
+      game.play
+      game.play
+    </pre>
+
+    <h1>Classes
+    </h1>
+
+    <p>What I've done above is create a class called TicTac - this allows me to model a set of behaviors (methods) that I define inside that class. Here I have the initialize method, which creates a new instance of the TicTac class, and the play method, which allows me to play a turn of TicTacToe by soliciting input from the user about which row and column to place an X or O in. Then I print out the board to the screen to reflect the moves.
+    </p>
+
+    <h1>Instance Variables
+    </h1>
+
+    <p>You may notice the @ sign before many of my variable names. This creates an instance variable which allows us to access a variable from outside the method where it was created. This ensures that we have the same board from the initialize method as the play method.
+
+  </section>
+
+  <footer class = "nav-bar">
+      <ul>
+        <li class="blog-footer">
+          <a href="./index.html">BACK TO MY BLOG</a>
+        </li>
+        <li class="blog-footer">
+          <a href="../index.html">BACK TO MY WEBSITE</a>
+        </li>
+        <li class="blog-footer">
+          <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
