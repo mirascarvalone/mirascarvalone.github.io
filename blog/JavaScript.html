@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <title>Week 7 Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mira Scarvalone's Phase 0 Dev Bootcamp Blog</h1>
+  </header>
+
+  <section class ="blog-title">
+    <p>Week 7: JavaScript Introduction</p>
+    <p>December 1, 2015</p>
+  </section>
+
+  <section class = "blog-text">
+    <p>
+      This week was the beginning of our JavaScript curriculum. There are a lot of similarities to Ruby and the types of tasks we've learned to program in the past few weeks, but the syntax is different, and there are a few other key differences. I'll elaborate on one of them below.
+    </p>
+
+    <h1>Looping in Ruby vs. JavaScript
+    </h1>
+
+    <p>Let's say we have an array of numbers from 1 to 10. In Ruby, there are a few ways we could iterate through them and print each out:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      my_numbers = [1,2,3,4,5,6,7,8,9,10]
+      my_numbers.each do |x|
+        puts x
+      end
+
+      for i in 0..my_numbers.length-1
+        puts my_numbers[i]
+      end
+    </pre>
+
+    <p>Whether we are using the built-in .each method or manually iterating through each position of the array, we are essentially performing the same task: telling an iterator where to start and end, how much to increment, and what to do at each stage. The concept is similar in JavaScript, although the syntax is different.
+    </p>
+
+    <pre class="prettyprint lang-javascript">
+      my_numbers = [1,2,3,4,5,6,7,8,9,10]
+
+      for (var i=0; i < my_numbers.length; i +=1)
+        console.log(my_numbers[i])
+    </pre>
+
+    <p>Note that in JavaScript we do not require an "end" after our for loop, and we use console.log to print to the screen. Within the for parenthesis, we are setting a variable i that starts at 0 and increments by 1 until it reaches the length of the array - then we print out the array at each position.
+    </p>
+
+  </section>
+
+  <footer class = "nav-bar">
+      <ul>
+        <li class="blog-footer">
+          <a href="./index.html">BACK TO MY BLOG</a>
+        </li>
+        <li class="blog-footer">
+          <a href="../index.html">BACK TO MY WEBSITE</a>
+        </li>
+        <li class="blog-footer">
+          <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
