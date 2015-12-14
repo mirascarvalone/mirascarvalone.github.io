@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <title>Week 8 Blog Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Mira Scarvalone's Phase 0 Dev Bootcamp Blog</h1>
+  </header>
+
+  <section class ="blog-title">
+    <p>Week 8: Recursion</p>
+    <p>December 13, 2015</p>
+  </section>
+
+  <section class = "blog-text">
+    <p>
+      This post will discuss recursion, something we have not covered directly in phase 0 but that will be important on campus at DBC.
+    </p>
+
+    <p>
+      Recursion is a method of problem solving where a solution is defined for a subset of cases and then that is used to generalize for the rest of the cases. For example, earlier in phase 0 we wrote a function in Ruby to find the factorial of a number. A factorial can be written as n*(n-1)*(n-2)... all the way down to 1, which is another way of saying that n! = n*(n-1)! Therefore we can use recursion to define the factorial of 0 and then work up from there:
+    </p>
+
+    <pre class="prettyprint lang-ruby">
+      def factorial(n)
+        n == 0 ? 1 : n*factorial(n-1)
+      end
+    </pre>
+
+    <p>
+      In this case, we are able to call a function within its definition, which is useful. In the above example, we only reference the function once within itself, so that is known as single recursion. Multiple recursion is also possible, and can be used to compute a Fibonacci sequence as an example.
+    </p>
+
+  </section>
+
+  <footer class = "nav-bar">
+      <ul>
+        <li class="blog-footer">
+          <a href="./index.html">BACK TO MY BLOG</a>
+        </li>
+        <li class="blog-footer">
+          <a href="../index.html">BACK TO MY WEBSITE</a>
+        </li>
+        <li class="blog-footer">
+          <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+        </li>
+      </ul>
+    </footer>
+
+</body>
