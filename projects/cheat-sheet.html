@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet.css">
+  <title>Dev Bootcamp Cheat Sheet</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>SQL Syntax</h1>
+  </header>
+
+  <section class ="posts">
+    <ul>
+      <li>
+        <h1>Basic Query Syntax</h1>
+        <p>SELECT = which variables we are selecting</p>
+        <p>SELECT DISTINCT = select one row for each value</p>
+        <p>FROM = tables we are selecting from</p>
+        <p>WHERE = condition we are modifying by</p>
+        <p>ORDER BY = ordering (sorting) by certain variables, ascending or descending</p>
+        <p>HAVING = like a where clause, but dealing with aggregates</p>
+      </li>
+      <li>
+        <h1>JOINS</h1>
+        <p>Inner Join: Selects elements present in both tables</p>
+        <p>Left Join: Selects elements present in "left" table (first listed), if it doesn't exist in right table, those columns show up as blank</p>
+        <p>Right Join: Same concept as left join but reversed</p>
+        <p>Full Join: Selects all elements in either table</p>
+        <p>*Remember we can join multiple tables at once by repeatedly invoking joins, one after another</p>
+      </li>
+      <li>
+        <h1>UNION</h1>
+        <p>A union basically stacks two tables on top of each other - they need to have the same columns of the same variable types</p>
+        <p>If we write "union all", that does not sort the values first.</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer class = "nav-bar">
+    <ul>
+      <li>
+        <a href="../index.html">BACK TO MY WEBSITE</a>
+      </li>
+      <li>
+        <a href="mailto:mira.scarvalone@gmail.com" target="_blank">EMAIL ME</a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
